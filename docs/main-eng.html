@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN - FM IMPIANTI EDILI DI MELPIGNANO FRANCESCO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="w-100">
+    <div id="slider">
+        <img src="1.jpeg">
+        <img src="2.jpeg">
+        <img src="3.jpeg">
+        <img src="4.jpeg">
+        <img src="5.jpeg">
+        <img src="6.jpeg">
+        <img src="7.jpeg">
+        <img src="8.jpeg">
+        <img src="9.jpeg">
+        <img src="10.jpeg">
+        <img src="11.jpeg">
+        <img src="12.jpeg">
+        <img src="13.jpeg">
+        <img src="14.jpeg">
+        <img src="15.jpeg">
+        <img src="16.jpeg">
+        <img src="17.jpeg">
+        <img src="18.jpeg">
+        <img src="19.jpeg">
+        <img src="20.jpeg">
+        <img src="21.jpeg">
+        <img src="22.jpeg">
+        <img src="23.jpeg">
+        <img src="24.jpeg">
+        <img src="25.jpeg">
+        <img src="26.jpeg">
+        <img src="27.jpeg">
+        <img src="28.jpeg">
+        <img src="29.jpeg">
+    </div>
+
+    <div id="nav-bar" class="p-2">
+        <img width="5%" src="logo.png">
+        <a id="lang" class="fs-5" href="index.html">Italiano</a>
+        <a id="lang" class="fs-5" href="main-eng.html">English</a>
+    </div>  
+</nav>
+    
+    <div id="aboutus">
+        <h2 class="mt-2">About us:</h3>
+        <p class="w-75">Welcome to FM IMPIANTI EDILI DI MELPIGNANO FRANCESCO, a trusted construction and installation company committed to delivering high-quality building solutions since 11.01.2017. <br/><br/>With years of experience in the industry, we specialize in providing complete construction, installation, and renovation services. Our goal is to transform every project into a durable and functional space that meets the highest standards of quality and safety as well as comfort.</p>
+    </div>
+
+    <div id="service">
+        <h2 class="mt-2">Our range of services includes:</h3>
+        <div id="service-items">
+            <p class="w-25">Building installations <br/><br/> We provide complete building installation services tailored to the specific needs of each project.</p>
+            <p class="w-25">Electrical installations <br/><br/> Our team delivers safe and professional electrical installation services, using modern systems and high-quality materials to guarantee performance and reliability.</p>
+            <p class="w-25">Installations and renovations <br/><br/> From small upgrades to full property renovations, we manage every stage of the process with care and expertise, bringing new life and value to every space.</p>
+            <p class="w-25">Turnkey projects <br/><br/> We offer complete turnkey constructions, handling every aspect of the project from planning to final delivery.</p>
+        </div>
+    </div>
+
+    <div id="guarantee">
+        <h3 class="mt-2">We guarantee:</h3>
+        <div id="guarantee-items">
+            <p class="w-50">Quality<br/><br/>customer satisfaction is our top priority.<br/> We are committed to: <br/><br/>- High-quality workmanship <br/><br/>- Creating a comfortable living environment <br/><br/>- Attending to the needs of our clients</p>
+            <p class="w-50">Reliability <br/><br/> We make sure our customers have confidence in our processes.<br/> Guaranteeing:<br/><br/>- Professional project management <br/><br/>- Compliance with safety regulations <br/><br/>- Timely project completion <br/><br/>- Transparent communication</p>
+            <p class="w-50">Guaranteed Services <br/><br/> We stand behind the quality of our work by providing guarantees on our services and installations. <br/><br/> Every project is completed with careful attention to detail and durable materials to ensure long-term reliability and customer confidence.</p>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>TIN: 02506170741</p>
+
+        <div id="feet-main" class="w-75">
+            <img id="feet-logo" src="logo.png">
+            <div id="feet-contact">
+                <h5>Contact:</h5>
+                <div class="feet-flex">
+                <img src="mail.png" class="pictogram"><p class="fs-6">E-mail - francescomelpig2015@libero.it</p>
+                </div>
+                <div class="feet-flex">
+                <img src="mail.png" class="pictogram"><p class="fs-6">pec - fmimpiantielettrici2017@pec.it</p>
+                </div>
+                <div class="feet-flex">
+                <img src="localization.png" class="pictogram"><p class="fs-6">Address: VIA MOLILLO SN, 72017, Ostuni, Brindisi</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        const slider = document.getElementById("slider");
+        let count = 0;
+        const totalImages = 29;
+
+        function Galeria() {
+            count++;
+
+            if (count >= totalImages) {
+                count = 0;
+            }
+
+            slider.style.transform = `translateX(-${count * (100 / totalImages)}%)`;
+        }
+
+        window.onload = function () {
+            setInterval(Galeria, 3600);
+        };
+    </script>
+</body>
+</html>
